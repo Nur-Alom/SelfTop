@@ -1,0 +1,268 @@
+
+.web-m{
+    display: none;
+}
+
+.web-c{
+    display: block;
+    background: #081621;
+}
+
+/* --------- Profile Button Style ------------- */
+
+.navbar-logo{
+    width: 25px;
+    margin-left: 55px;
+}
+
+.action{
+    margin-right: 55px;
+}
+
+.profile{
+    position: relative;
+    width: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.profile img{
+    width: 100%;
+}
+
+.action .menu{
+    position: absolute;
+    top: 80px;
+    right: 10px;
+    padding: 10px 20px;
+    background: #dee2e6;
+    width: 200px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.action .active{
+    position: absolute;
+    top: 70px;
+    right: 55px;
+    padding: 10px 0px;
+    background: white;
+    width: 200px;
+    transition: 0.5s;
+    visibility: visible;
+    opacity: 1;
+}
+
+.action .active::before{
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: 28px;
+    width: 20px;
+    height: 20px;
+    background: white;
+    transform: rotate(45deg);
+}
+
+.active p{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0;
+    margin: 10px 0 0 0;
+    color: black;
+}
+
+.active h6{
+    font-size: 12px;
+    margin: 0px 0px 10px 0px;
+    color: #636f83;
+}
+
+.active ul{
+    padding-left: 0px;
+    margin: 0%;
+}
+
+.active ul li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.active ul i{
+    margin-right: 10px;
+}
+
+.action .view-profile-btn{
+    position: static;
+    background: linear-gradient(335.34deg, #565515, #565111);
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 18px;
+}
+
+.action .profile-nav{
+    position: static;
+    text-align: start;
+    padding-left: 15px;
+    right: 0;
+    text-decoration: none;
+    color: rgb(48, 45, 45);
+}
+
+.active ul li .profile-nav:hover{
+    background-color: #ebe9e9;
+    color:#ff5d94;
+    transition: 0.6s;
+}
+
+/*-------- Navbar Bottom Style ---------*/
+
+.navbar-bottom ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-bottom p{
+    margin: 0%;
+    font-size: 10px;
+}
+
+
+/*--------------- Media Query For Responsive Design -----------------*/
+
+
+@media only screen and (max-width: 480px) {
+    .web-c{
+        display: none;
+    }
+
+    .web-m{
+        display: block;
+        background: #081621;
+        color: white;
+    }
+
+    /* --------- Profile Button Style ------------- */
+
+    .navbar-logo{
+        width: 25px;
+        margin-left: 0px;
+    }
+    
+    .action{
+        margin-right: 50px;
+    }
+    
+    .action .profile{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    
+    .action .profile img{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .action .menu{
+        position: absolute;
+        top: 80px;
+        right: 10px;
+        padding: 10px 20px;
+        background: #dee2e6;
+        width: 200px;
+        border-radius: 15px;
+        transition: 0s;
+        visibility: hidden;
+        opacity: 0;
+    }
+    
+    .action .active{
+        position: absolute;
+        top: 100px;
+        right: 50px;
+        padding: 10px 0px;
+        background: #dee2e6;
+        width: 200px;
+        border-radius: 10px;
+        /* transition: 0.5s; */
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    .action .active::before{
+        content: '';
+        position: absolute;
+        top: -10px;
+        right: 28px;
+        width: 20px;
+        height: 20px;
+        background: #dee2e6;
+        transform: rotate(45deg);
+    }
+    
+    .action .active h2{
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+        padding: 20px 0;
+        font-weight: 500;
+        color: #555;
+        line-height: 1.2em;
+    }
+    
+    .action .active ul li{
+        list-style: none;
+        padding: 10px 0;
+        border-top: 1px solid rga(0,0,0,0.05);
+        display: flex;
+        align-items: center;
+    }
+    
+    .action .active ul li img{
+        max-width: 20px;
+        margin-right: 10px;
+        opacity: 0.5;
+        transition: 0.5s;
+    }
+    
+    .action .active ul li:hover img{
+        opacity: 1;
+    }
+    
+    .action .active ul li:hover a{
+        color: #ff5d94;
+    }
+    
+    /* navbar bottom Style */
+
+    .navbar-bottom ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbar-bottom p{
+        margin: 0%;
+        font-size: 10px;
+    }
+}
+
+

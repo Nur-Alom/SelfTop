@@ -1,5 +1,12 @@
 .App {
   text-align: center;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f2f4f8;
+  /* padding: 0 5%; */
+}
+
+::-webkit-scrollbar {
+  width: 0px;
 }
 
 .App-logo {
