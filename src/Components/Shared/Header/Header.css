@@ -105,8 +105,9 @@
 
 .action .profile-nav{
     position: static;
+    width: 200px;
     text-align: start;
-    padding-left: 15px;
+    padding: 10px 0 10px 15px;
     right: 0;
     text-decoration: none;
     color: rgb(48, 45, 45);

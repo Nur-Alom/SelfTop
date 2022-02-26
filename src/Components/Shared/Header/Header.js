@@ -40,12 +40,12 @@ const Header = () => {
                                 <img style={{ width: '80px', borderRadius: '50%' }} src={user} alt="" />
                                 <p>Nur Alom Islam</p>
                                 <h6>User ID: ST-001</h6>
-                                <NavLink to='/' className='view-profile-btn'>View Profile</NavLink>
+                                <NavLink to='/userprofile' className='view-profile-btn'>View Profile</NavLink>
                                 <hr style={{ margin: '13px 0 0 0' }} />
                                 <ul>
-                                    <li><NavLink className='profile-nav' to="/"><i className="bi bi-wallet2"></i>My Wallet</NavLink></li>
-                                    <li><NavLink className='profile-nav' to="/"><i className="bi bi-card-checklist"></i>My Order</NavLink></li>
-                                    <li><NavLink className='profile-nav' to="/"><i className="bi bi-clock-history"></i>History</NavLink></li>
+                                    <li><NavLink className='profile-nav' to="/userWallet"><i className="bi bi-wallet2"></i>My Wallet</NavLink></li>
+                                    <li><NavLink className='profile-nav' to="/userOrder"><i className="bi bi-card-checklist"></i>My Order</NavLink></li>
+                                    <li><NavLink className='profile-nav' to="/orderHistory"><i className="bi bi-clock-history"></i>History</NavLink></li>
                                     <li><NavLink className='profile-nav' to="/"><i className="bi bi-box-arrow-right"></i>Logout</NavLink></li>
                                 </ul>
                             </div>
