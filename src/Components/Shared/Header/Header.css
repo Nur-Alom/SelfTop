@@ -135,6 +135,10 @@
     color: white;
 }
 
+.profile-B-nav:hover{
+    color: red;
+}
+
 .navbar-bottom p{
     color: white;
     margin: 0%;
