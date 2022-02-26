@@ -130,7 +130,13 @@
     margin: 0;
 }
 
+.profile-B-nav{
+    text-decoration: none;
+    color: white;
+}
+
 .navbar-bottom p{
+    color: white;
     margin: 0%;
     font-size: 10px;
 }

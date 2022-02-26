@@ -70,10 +70,10 @@ const Header = () => {
             <Navbar className='navbar web-m' variant="dark" fixed="bottom" expand="lg">
                 <div className='navbar-bottom'>
                     <ul>
-                        <li><i className="fa-solid fa-house"></i><p>Home</p></li>
-                        <li><i className="fa-solid fa-gift"></i><p>Offers</p></li>
-                        <li><i className="fa-solid fa-bolt-lightning"></i><p>TOP-UP</p></li>
-                        <li><i className="fa-solid fa-user"></i><p>Account</p></li>
+                        <li><NavLink className='profile-B-nav' to='/'><i className="bi bi-house-door"></i><p>Home</p></NavLink></li>
+                        <li><NavLink className='profile-B-nav' to='/'><i className="bi bi-gift"></i><p>Offers</p></NavLink></li>
+                        <li><NavLink className='profile-B-nav' to='/'><i className="bi bi-lightning"></i><p>TOP-UP</p></NavLink></li>
+                        <li><NavLink className='profile-B-nav' to='/'><i className="bi bi-person"></i><p>Account</p></NavLink></li>
                     </ul>
                 </div>
             </Navbar>
