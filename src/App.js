@@ -6,11 +6,13 @@ import UserProfile from './Components/UserAccount/UserInformation/UserProfile/Us
 import Wallet from './Components/UserAccount/UserInformation/Wallet/Wallet';
 import Order from './Components/UserAccount/UserInformation/Order/Order';
 import OrderHistory from './Components/UserAccount/UserInformation/OrderHistory/OrderHistory';
+import Header from './Components/Shared/Header/Header';
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <Header />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/userprofile' element={<UserProfile />} />
