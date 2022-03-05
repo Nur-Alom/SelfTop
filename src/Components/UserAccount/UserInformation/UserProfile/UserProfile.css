@@ -1,6 +1,14 @@
 
+.master-div{
+   width: 100%;
+    /* position: fixed; */
+    /* padding: 5% 5% 8%;  */
+}
+
 .profile-main{
     display: flex;
+    width: 100%;
+    position: fixed;
     padding: 5% 5% 8%;
 }
 
@@ -8,7 +16,7 @@
 
 .user-section{
     width: 30%;
-    height: fit-content;
+    height: auto;
     background-color: #DCE3E8;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
@@ -32,7 +40,6 @@
     background-color: white;
     margin: 15px;
     padding: 10px 0;
-    /* border-radius: 5px; */
     border-top-left-radius: 12px;
     border-bottom-right-radius: 12px;
 }
@@ -63,13 +70,20 @@
 }
 
 .information-section ul{
+    background: white;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     padding: 5px;
-    margin: 0;
+    margin: 0 0 10px;
+}
+
+.information-section h5{
+    font-weight: bold;
+    color: darkgreen;
 }
 
 .ra-div{
+    height: 50vh;
     overflow-y: scroll;
 }
 
@@ -77,8 +91,10 @@
     width: 10px;
 }
 .ra-div::-webkit-scrollbar-track{
-    background-color: red;
+    border-radius: 10px;
+    background: ghostwhite;
 }
 .ra-div::-webkit-scrollbar-thumb{
-    background-color: green;
+    border-radius: 10px;
+    background: linear-gradient(yellow,rgb(55, 255, 218));
 }

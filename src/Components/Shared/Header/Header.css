@@ -41,11 +41,11 @@
     visibility: hidden;
     opacity: 0;
 }
-
 .action .active{
+    border: 1px dashed red;
     position: absolute;
-    top: 70px;
-    right: 55px;
+    top: 75px;
+    right: 50px;
     padding: 10px 0px;
     background: white;
     width: 200px;
@@ -55,9 +55,11 @@
 }
 
 .action .active::before{
+    border-top: 1px dashed red;
+    border-left: 1px dashed red;
     content: '';
     position: absolute;
-    top: -10px;
+    top: -11px;
     right: 28px;
     width: 20px;
     height: 20px;
@@ -104,6 +106,7 @@
 }
 
 .action .profile-nav{
+    border: none;
     position: static;
     width: 200px;
     text-align: start;
