@@ -98,6 +98,7 @@
 
 .action .view-profile-btn{
     position: static;
+    border: 0px;
     background: linear-gradient(335.34deg, #565515, #565111);
     text-decoration: none;
     color: white;

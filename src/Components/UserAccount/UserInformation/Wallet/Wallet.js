@@ -1,12 +1,54 @@
 import React from 'react';
 import './Wallet.css';
+import walletImg from '../../../Images/wallet.png';
+import BkashImg from '../../../Images/bKash.png';
+import NogodImg from '../../../Images/nogodjpg.jpg';
+import RocketImg from '../../../Images/rocket.png';
+import UpayImg from '../../../Images/upay.jpg';
 
 const Wallet = () => {
+    const data = "2555"
+
     return (
-        <div style={{ background: 'gray', marginTop: '4%' }}>
-            <div>
-                <h2>Hello From Wallet</h2>
-                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam aliquid possimus praesentium necessitatibus perferendis debitis modi? Quod assumenda omnis, provident, cumque officia earum nobis illo laborum totam quos optio quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi at non tenetur inventore minima architecto, ab quo excepturi velit. Ipsam beatae, est similique cupiditate quia sint sit nesciunt quas necessitatibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus voluptatibus tempora odit nobis minima ab, adipisci quia a rem reiciendis neque, esse quaerat labore magni sit? Vero aperiam eaque natus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt labore dolor minus corporis provident perferendis libero repellat dignissimos quam? Eum delectus molestias sed maiores quae deserunt sunt necessitatibus fugiat, magnam aut voluptates explicabo, modi omnis est nesciunt debitis nulla voluptate mollitia quia voluptatum? Vero sequi quisquam cum. Mollitia, consequatur modi ducimus unde aperiam cupiditate est accusamus eum magnam quod fuga aut ipsa voluptatum qui impedit? Beatae error doloribus aliquam, aperiam minima ad? Doloribus maiores reprehenderit vitae ad quas porro perferendis quam aperiam veniam debitis? Mollitia facilis maxime neque non deserunt voluptate laborum ipsa, ipsum, ab quaerat aperiam. Harum ad possimus soluta corporis consequatur alias, veniam, quos nisi magnam molestiae recusandae saepe exercitationem quaerat excepturi dolores! Libero, quasi ipsam. Libero modi dignissimos facere eius culpa necessitatibus voluptas veritatis mollitia dolore soluta facilis illo ullam voluptate sunt saepe excepturi dicta rem, adipisci nesciunt eos. Dignissimos vero, impedit delectus, itaque molestiae veniam totam perspiciatis deleniti magnam earum amet cumque, quasi molestias magni nulla? Porro sapiente odio aliquid eos quas nulla autem at dolor beatae dolores earum, delectus impedit provident cum omnis enim ad atque nesciunt quis, expedita dolorum ipsam doloremque iusto. Totam mollitia in necessitatibus minus soluta nisi deserunt fugiat autem odio a </p>
+        <div className='wallet-main'>
+            <div className='wallet-action-div'>
+                <img className='wallet-img' src={walletImg} alt="" />
+                <br />
+                <ul>
+                    <strong>Select Your Payment Option. <i className="bi bi-arrow-down-circle"></i></strong>
+                    <div className='wallet-pay-option'>
+                        <li><input type="checkbox" name="Bkash" id="1" /><small>Bkash</small></li>
+                        <li><input type="checkbox" name="Nogod" id="2" /><small>Nagad</small></li>
+                        <li><input type="checkbox" name="Rocket" id="3" /><small>Rocket</small></li>
+                        <li><input type="checkbox" name="Upay" id="4" /><small>Upay</small></li>
+                    </div>
+                    <hr style={{ color: 'gray' }} />
+                    <li><i className="bi bi-person-circle"></i><input type="text" disabled defaultValue={data} /></li>
+                    <li><i className="bi bi-123"></i><input type="number" placeholder='Sending Number' /></li>
+                    <li><i className="bi bi-cash-coin"></i><input type="number" placeholder='Amount' /></li>
+                    <li><i className="bi bi-send-check"></i><input type="text" placeholder='Transaction ID' /></li>
+                    <li><button className='add-money-btn' type="submit">Add Money <i className="bi bi-plus-lg"></i></button></li>
+                </ul>
+            </div>
+            <div className='wallet-info-div'>
+                <div className='wallet-info-images'>
+                    <li>
+                        <img src={BkashImg} alt="" />
+                        <strong>Bkash</strong>
+                    </li>
+                    <li>
+                        <img src={NogodImg} alt="" />
+                        <strong>Nagad</strong>
+                    </li>
+                    <li>
+                        <img src={RocketImg} alt="" />
+                        <strong>Rocket</strong>
+                    </li>
+                    <li>
+                        <img src={UpayImg} alt="" />
+                        <strong>Upay</strong>
+                    </li>
+                </div>
             </div>
         </div>
     );

@@ -96,5 +96,5 @@
 }
 .ra-div::-webkit-scrollbar-thumb{
     border-radius: 10px;
-    background: linear-gradient(yellow,rgb(55, 255, 218));
+    background: linear-gradient(-45deg, rgb(233, 233, 110) 50%,rgb(68, 245, 212) 50%);
 }
