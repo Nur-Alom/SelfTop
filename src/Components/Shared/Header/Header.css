@@ -57,7 +57,7 @@
 .action .active::before{
     content: '';
     position: absolute;
-    top: -11px;
+    top: -10px;
     right: 28px;
     width: 20px;
     height: 20px;
@@ -116,6 +116,7 @@
 }
 
 .action .profile-nav{
+    box-shadow: 0px 0px 0px white;
     border: none;
     position: static;
     width: 200px;
