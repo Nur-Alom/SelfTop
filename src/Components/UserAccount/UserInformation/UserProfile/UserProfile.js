@@ -1,7 +1,6 @@
 import React from 'react';
 import './UserProfile.css';
 import userImg from '../../../Images/user.jpg';
-// import Footer from '../../../Shared/Footer/Footer';
 
 const UserProfile = () => {
     const data = [
@@ -50,7 +49,7 @@ const UserProfile = () => {
     return (
         <div className='master-div'>
             <div className='profile-main'>
-                <div className='user-section sticky-top'>
+                <div className='user-section'>
                     <img className='profile-img' src={userImg} alt="" />
                     <br />
                     <div className='d-flex justify-content-center'>

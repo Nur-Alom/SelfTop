@@ -42,7 +42,7 @@
     opacity: 0;
 }
 .action .active{
-    border: 1px dashed red;
+    box-shadow: 5px 5px 15px lightgray;
     position: absolute;
     top: 75px;
     right: 50px;
@@ -55,8 +55,6 @@
 }
 
 .action .active::before{
-    border-top: 1px dashed red;
-    border-left: 1px dashed red;
     content: '';
     position: absolute;
     top: -11px;
@@ -98,10 +96,21 @@
 
 .action .view-profile-btn{
     position: static;
+    box-shadow: 0px 0px 0px white;
     border: 0px;
-    background: linear-gradient(335.34deg, #565515, #565111);
+    background: #63e067;
     text-decoration: none;
     color: white;
+    padding: 5px 15px;
+    border-radius: 18px;
+}
+
+.action .view-profile-btn:hover{
+    position: static;
+    border: 1px solid #63e067;
+    background: white;
+    text-decoration: none;
+    color: #63e067;
     padding: 5px 15px;
     border-radius: 18px;
 }
@@ -119,8 +128,8 @@
 
 .active ul li .profile-nav:hover{
     background-color: #ebe9e9;
-    color:#ff5d94;
-    transition: 0.6s;
+    color:#63e067;
+    transition: 0.5s;
 }
 
 /*-------- Navbar Bottom Style ---------*/
