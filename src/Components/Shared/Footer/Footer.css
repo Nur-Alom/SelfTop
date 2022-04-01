@@ -1,68 +1,70 @@
-
-.footer-main{
-    background: linear-gradient(180deg,#6749f9 .01%,#5a00dd 100.01%);
+.footer-main {
+    /* background: linear-gradient(180deg,#6749f9 .01%,#5a00dd 100.01%); */
+    background: linear-gradient(135deg, #63e067 0%, #42b242 100%);
 }
 
-.footer{
+.footer {
     display: flex;
     padding: 3% 5%;
     margin-top: 4%;
 }
 
-.first-div{
+.first-div {
     color: white;
     text-align: start;
 }
 
-.first-div img{
+.first-div img {
     width: 35px;
 }
 
-.first-div-item{
+.first-div-item {
     display: flex;
 }
 
-.first-div-item a{
+.first-div-item a {
     text-decoration: none;
     color: white;
 }
-.first-div-item a:hover{
+
+.first-div-item a:hover {
     text-decoration: underline;
     color: white;
-    
+
 }
-.first-div-item i{
+
+.first-div-item i {
     margin-top: 4px;
 }
 
 /* ---------------- */
 
-.second-div{
+.second-div {
     padding: 0 2%;
 }
 
-.second-div ul{
+.second-div ul {
     padding: 2% 0 0 0;
 }
 
-.second-div li{
+.second-div li {
     list-style: none;
     text-align: start;
     color: white;
     font-size: 20px;
 }
 
-.social-links{
+.social-links {
     color: white;
     font-size: 25px;
     text-align: start;
 }
 
-.social-links a{
+.social-links a {
     color: white;
 }
 
-.footer-last{
+.footer-last {
     display: flex;
     justify-content: space-between;
 }
@@ -72,11 +74,12 @@
 
 
 @media only screen and (max-width: 480px) {
-    .footer{
+    .footer {
         display: flex;
         flex-direction: column;
     }
-    .footer-last{
+
+    .footer-last {
         display: flex;
         flex-direction: column;
         justify-content: space-between;

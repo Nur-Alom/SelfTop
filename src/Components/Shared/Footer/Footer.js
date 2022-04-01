@@ -46,14 +46,17 @@ const Footer = () => {
                         <a target='_blank' href="/"><i className="fa-brands fa-instagram"></i></a>
                     </div>
                 </div>
-                <div className='pt-3 text-start col-md-4'>
+                <div className='text-start col-md-4'>
+                    <div className='pb-3 text-start text-white'>
+                        <h3 className='mt-2 fw-bold'>Payment Method</h3>
+                    </div>
                     <img src={sslImg} alt="" />
                 </div>
             </div>
             <hr style={{ color: 'white' }} />
             <div className='footer-last text-white py-3 mx-5'>
-                <span style={{ color: '#b5b5b5' }}><p>© 2022 Selftop | All rights reserved</p></span>
-                <span><p><span style={{ color: '#b5b5b5' }}>Developed by</span> Selftop</p></span>
+                <span style={{ color: '#fff' }}><p>© 2022 Selftop | All rights reserved</p></span>
+                <span><p><span style={{ color: '#b5b5b5' }}>Developed by :</span> Selftop</p></span>
             </div>
         </div>
     );

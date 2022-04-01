@@ -1,54 +1,53 @@
-
-.wallet-main{
+.wallet-main {
     display: flex;
     width: 100%;
     /* position: fixed; */
     background: white;
-    padding: 5% 5% 8%;
+    padding: 5% 5% 5%;
 }
 
 
 /* ---------- Wallet Action Div ------------- */
 
-.wallet-action-div{
+.wallet-action-div {
     width: 30%;
     background-color: #CDD;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
 }
 
-.wallet-img{
+.wallet-img {
     width: 60%;
     padding: 10px;
     margin: 15px 0;
 }
 
-.wallet-action-div ul{
+.wallet-action-div ul {
     color: #75c0ad;
     /* font-size: 20px; */
     text-align: start;
     list-style: none;
     margin: 0%;
     padding: 15px;
-    border-top: 3px solid whitesmoke;
+    border-top: 4px solid whitesmoke;
 }
 
-.wallet-action-div ul strong{
+.wallet-action-div ul strong {
     color: black;
 }
 
-.wallet-pay-option{
+.wallet-pay-option {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     color: black;
 }
 
-.wallet-action-div .wallet-pay-option input{
+.wallet-action-div .wallet-pay-option input {
     width: auto;
     margin: 0 5px 0 0;
 }
 
-.wallet-action-div ul li input{
+.wallet-action-div ul li input {
     width: 90%;
     text-align: center;
     border: none;
@@ -57,47 +56,47 @@
     padding: 5px 0 5px 15px;
 }
 
-.add-money-btn{
-    background: green;
+.add-money-btn {
+    background: #42b242;
     color: white;
-    border: 1px solid green;
+    border: 1px solid #42b242;
     border-radius: 19px;
     padding: 5px 94px;
     margin-left: 8%;
 }
-.add-money-btn:hover{
+
+.add-money-btn:hover {
     background: white;
-    color: black;
+    color: #42b242;
     border: 1px solid green;
     border-radius: 19px;
     padding: 5px 94px;
     margin-left: 8%;
-    font-weight: bold;
 }
 
 
 /* ---------- Wallet Information Div --------------*/
 
-.wallet-info-div{
+.wallet-info-div {
     width: 70%;
     background-color: #CDD;
-    border-left: 3px solid whitesmoke;
+    border-left: 4px solid whitesmoke;
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
 }
 
-.wallet-info-div .wallet-info-images{
+.wallet-info-div .wallet-info-images {
     display: flex;
     list-style: none;
     padding: 10px 5px;
 }
 
-.wallet-info-images li{
+.wallet-info-images li {
     background: white;
     margin: 10px;
 }
 
-.wallet-info-images img{
+.wallet-info-images img {
     width: 100%;
     padding-bottom: 3px;
     border-bottom: 1px solid whitesmoke;

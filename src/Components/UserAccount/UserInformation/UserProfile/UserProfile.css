@@ -1,11 +1,10 @@
-
-.master-div{
-   width: 100%;
+.master-div {
+    width: 100%;
     /* position: fixed; */
     /* padding: 5% 5% 8%;  */
 }
 
-.profile-main{
+.profile-main {
     display: flex;
     width: 100%;
     position: fixed;
@@ -14,28 +13,31 @@
 
 /* ---------- User Section ------------ */
 
-.user-section{
+.user-section {
     width: 30%;
     height: auto;
-    background-color: #DCE3E8;
+    /* background-color: #DCE3E8; */
+    background: #CDD;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
 }
 
-.profile-img{
+.profile-img {
     width: 50%;
     margin: 15px 15px 8px 15px;
-    border: 5px solid #63e067;
+    /* border: 5px solid #63e067; */
+    border: 5px solid #42b242;
     border-radius: 50%;
 }
 
-.user-section ul{
+.user-section ul {
     width: 100%;
     padding: 0%;
     margin: 0%;
+    border-top: 4px solid whitesmoke;
 }
 
-.user-section ul div{
+.user-section ul div {
     display: flex;
     background-color: white;
     margin: 15px;
@@ -44,13 +46,13 @@
     border-bottom-right-radius: 12px;
 }
 
-.user-section ul li{
+.user-section ul li {
     margin: 5px 0;
     list-style: none;
     text-align: start;
 }
 
-.user-section span{
+.user-section span {
     padding: 2px;
     margin: 0 5px;
 }
@@ -59,42 +61,54 @@
 /* ---------- Information Section ------------ */
 
 
-.information-section{
+.information-section {
     width: 70%;
-    background-color:#DCE3E8;
+    /* background-color: #DCE3E8; */
+    background: #CDD;
     text-align: start;
     padding: 15px;
-    border-left: 5px solid whitesmoke ;
+    border-left: 5px solid whitesmoke;
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
 }
 
-.information-section ul{
+.information-section ul {
     background: white;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     padding: 5px;
     margin: 0 0 10px;
 }
 
-.information-section h5{
+.information-section h5 {
     font-weight: bold;
     color: black;
 }
 
-.ra-div{
+.ra-div {
     height: 50vh;
     overflow-y: scroll;
 }
 
-.ra-div::-webkit-scrollbar{
-    width: 10px;
+.ra-div::-webkit-scrollbar {
+    width: 6px;
 }
-.ra-div::-webkit-scrollbar-track{
+
+.ra-div::-webkit-scrollbar-track {
     border-radius: 10px;
     background: ghostwhite;
 }
-.ra-div::-webkit-scrollbar-thumb{
+
+.ra-div::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background: linear-gradient(-45deg, rgb(233, 233, 110) 50%,rgb(68, 245, 212) 50%);
+    /* background: linear-gradient(135deg, #8BC6EC 0%, #9ea2e9 100%); */
+    background: linear-gradient(135deg, #63e067 30%, #42b242 70%);
+}
+
+.ra-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    border-radius: 6px;
 }
