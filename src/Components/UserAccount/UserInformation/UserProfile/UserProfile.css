@@ -57,6 +57,30 @@
     margin: 0 5px;
 }
 
+.user-section small {
+    background: #42b242;
+    color: white;
+    padding: 6px 10px;
+    margin-right: 10px;
+    border-radius: 19px;
+}
+
+.balance-btn {
+    border: 1px solid #63e067;
+    background: #63e067;
+    color: white;
+    padding: 4px 20px;
+    border-radius: 18px;
+}
+
+.balance-btn:hover {
+    border: 1px solid #63e067;
+    background: white;
+    color: #63e067;
+    padding: 4px 20px;
+    border-radius: 18px;
+}
+
 
 /* ---------- Information Section ------------ */
 

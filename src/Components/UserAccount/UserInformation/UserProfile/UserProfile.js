@@ -1,14 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import './UserProfile.css';
 import userImg from '../../../Images/user.jpg';
+import { Spinner } from 'react-bootstrap';
 
 const UserProfile = () => {
     const [products, setProducts] = useState([]);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         fetch("https://fakestoreapi.com/products")
             .then(req => req.json())
-            .then(data => setProducts(data))
+            .then(data => {
+                setProducts(data)
+                setLoading(false)
+            })
     }, [products])
 
     return (
@@ -18,8 +23,12 @@ const UserProfile = () => {
                     <img className='profile-img' src={userImg} alt="" />
                     <br />
                     <div className='d-flex justify-content-center'>
-                        <small style={{ color: 'white', backgroundColor: '#42b242', padding: '5px 10px', borderRadius: '19px', fontWeight: 'bold', marginRight: '10px' }}><i className="bi bi-person-check"></i> User ID : ST-001</small>
-                        <button style={{ color: 'white', backgroundColor: 'green', padding: '4px 20px', borderRadius: '19px', border: 'none' }}><i className="bi bi-arrow-clockwise"></i> ৳ 1000.00</button>
+                        <small><i className="bi bi-person-check"></i> User : ST-001</small>
+                        {loading ?
+                            <button className='balance-btn'><Spinner animation="border" variant="info" size="sm" /> ৳ 1000.00</button>
+                            :
+                            <button className='balance-btn'><i className="bi bi-arrow-clockwise"></i> ৳ 1000.00</button>
+                        }
                     </div>
                     <hr style={{ margin: '13px 0 0', height: '0' }} />
                     <ul>
@@ -50,17 +59,22 @@ const UserProfile = () => {
                     </ul>
                     <h5>Recent Activities <i className="bi bi-arrow-down-circle"></i></h5>
                     <hr style={{ margin: '5px 0' }} />
-                    <div className='ra-div'>
-                        {
-                            products.map(product =>
-                                <div key={product.id} className='ra-item mb-2 py-2 px-3'>
-                                    <img style={{ width: '70px', height: "70px" }} src={product.image} alt="" />
-                                    <h6>{product.title.slice(0, 50)}</h6>
-                                    <p>{product.price}</p>
-                                </div>
-                            )
-                        }
-                    </div>
+                    {loading ?
+                        <div style={{ textAlign: "center", paddingTop: "12%" }}>
+                            <Spinner animation="border" variant="info" />
+                        </div>
+                        :
+                        <div className='ra-div'>
+                            {
+                                products.map(product =>
+                                    <div key={product.id} className='ra-item mb-2 py-2 px-3'>
+                                        <img style={{ width: '70px', height: "70px" }} src={product.image} alt="" />
+                                        <h6>{product.title.slice(0, 50)}</h6>
+                                        <p>{product.price}</p>
+                                    </div>
+                                )
+                            }
+                        </div>}
                 </div>
             </div>
             {/* <Footer /> */}
