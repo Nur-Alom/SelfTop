@@ -35,7 +35,7 @@ const Order = () => {
                 <div className='d-flex align-items-center justify-content-between'>
                     <p>Order List</p>
                     {loading2 ?
-                        <button style={{ background: "white", width: "108px" }}>Reload <Spinner animation="border" variant="info" size="sm" /></button>
+                        <button style={{ background: "white", width: "108px", color: "#63e067", border: "1px solid #63e067" }}>Reload <Spinner animation="border" variant="info" size="sm" /></button>
                         :
                         <button onClick={dataLoading}>Reload <i className="bi bi-arrow-clockwise"></i></button>
                     }

@@ -6,6 +6,18 @@ import { Spinner } from 'react-bootstrap';
 const UserProfile = () => {
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
+    const [loading2, setLoading2] = useState(false);
+    const [loadData, setLoadData] = useState(false);
+
+    const balanceLoad = () => {
+        setLoading(true)
+        setLoading2(true)
+        if (loadData === true) {
+            setLoadData(false)
+        } else {
+            setLoadData(true)
+        }
+    }
 
     useEffect(() => {
         fetch("https://fakestoreapi.com/products")
@@ -13,8 +25,9 @@ const UserProfile = () => {
             .then(data => {
                 setProducts(data)
                 setLoading(false)
+                setLoading2(false)
             })
-    }, [products])
+    }, [products, loadData])
 
     return (
         <div className='master-div'>
@@ -24,10 +37,10 @@ const UserProfile = () => {
                     <br />
                     <div className='d-flex justify-content-center'>
                         <small><i className="bi bi-person-check"></i> User : ST-001</small>
-                        {loading ?
-                            <button className='balance-btn'><Spinner animation="border" variant="info" size="sm" /> ৳ 1000.00</button>
+                        {loading2 ?
+                            <button style={{ background: "white", color: "#63e067", border: "1px solid #63e067", borderRadius: "18px", padding: "4px 20px" }}><Spinner animation="border" variant="info" size="sm" /> ৳ 1000.00</button>
                             :
-                            <button className='balance-btn'><i className="bi bi-arrow-clockwise"></i> ৳ 1000.00</button>
+                            <button onClick={balanceLoad} className='balance-btn'><i className="bi bi-arrow-clockwise"></i> ৳ 1000.00</button>
                         }
                     </div>
                     <hr style={{ margin: '13px 0 0', height: '0' }} />
