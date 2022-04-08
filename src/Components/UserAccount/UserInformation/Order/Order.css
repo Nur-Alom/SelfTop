@@ -32,3 +32,64 @@
     background: white;
     border-radius: 10px;
 }
+
+.order-list img {
+    width: 80px;
+    height: 80px;
+}
+
+
+
+
+/*-----------------------------------------------------
+                Responsive Media Query
+-----------------------------------------------------*/
+
+
+
+@media only screen and (max-width: 480px) {
+    .order-div {
+        margin-top: 15%;
+        padding-top: 6%;
+    }
+
+    .order-div p {
+        display: inline;
+        font-weight: bold;
+        margin: 0%;
+    }
+
+    .order-div button {
+        border: 1px solid #63e067;
+        background: #63e067;
+        color: white;
+        padding: 5px 15px;
+        border-radius: 18px;
+    }
+
+    .order-div button:hover {
+        border: 1px solid #63e067;
+        background: white;
+        color: #63e067;
+        padding: 5px 15px;
+        border-radius: 18px;
+    }
+
+    .order-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: white;
+        border-radius: 10px;
+    }
+
+    .order-list img {
+        width: 60px;
+        height: 60px;
+        margin-right: 20px;
+    }
+
+    .order-list h6 {
+        margin-right: 20px;
+    }
+}

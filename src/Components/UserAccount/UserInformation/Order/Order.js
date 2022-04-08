@@ -31,7 +31,7 @@ const Order = () => {
 
     return (
         <div className='order-div'>
-            <div className='container'>
+            <div className='container mb-5'>
                 <div className='d-flex align-items-center justify-content-between'>
                     <p>Order List</p>
                     {loading2 ?
@@ -50,7 +50,7 @@ const Order = () => {
                         {
                             orders.map(order => <div className='order-list mb-2 py-2 px-3'
                                 key={order.image}>
-                                <img style={{ width: "80px", height: "80px" }} src={order.image} alt="" />
+                                <img src={order.image} alt="" />
                                 <h6>{order.title}</h6>
                                 <h6>{order.price}</h6>
                             </div>)

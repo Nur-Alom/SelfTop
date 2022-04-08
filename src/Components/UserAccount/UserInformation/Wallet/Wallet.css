@@ -3,7 +3,7 @@
     width: 100%;
     /* position: fixed; */
     background: white;
-    padding: 5% 5% 5%;
+    padding: 5% 5% 0%;
 }
 
 
@@ -100,4 +100,125 @@
     width: 100%;
     padding-bottom: 3px;
     border-bottom: 1px solid whitesmoke;
+}
+
+
+
+
+/*---------------------------------------------------------
+                Responsive Media Query
+---------------------------------------------------------*/
+
+
+
+@media only screen and (max-width: 480px) {
+    .wallet-main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        /* position: fixed; */
+        background: white;
+        padding: 5% 5% 5%;
+    }
+
+
+    /* ---------- Wallet Action Div ------------- */
+
+    .wallet-action-div {
+        width: 100%;
+        background-color: #CDD;
+        margin-top: 15%;
+        border-radius: 15px;
+        /* border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px; */
+    }
+
+    .wallet-img {
+        width: 60%;
+        padding: 10px;
+        margin: 15px 0;
+    }
+
+    .wallet-action-div ul {
+        color: #75c0ad;
+        /* font-size: 20px; */
+        text-align: start;
+        list-style: none;
+        margin: 0%;
+        padding: 15px;
+        border-top: 4px solid whitesmoke;
+    }
+
+    .wallet-action-div ul strong {
+        color: black;
+    }
+
+    .wallet-pay-option {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        color: black;
+    }
+
+    .wallet-action-div .wallet-pay-option input {
+        width: auto;
+        margin: 0 5px 0 0;
+    }
+
+    .wallet-action-div ul li input {
+        width: 90%;
+        text-align: center;
+        border: none;
+        border-radius: 22px;
+        margin: 0 0 15px 10px;
+        padding: 5px 0 5px 15px;
+    }
+
+    .add-money-btn {
+        background: #42b242;
+        color: white;
+        border: 1px solid #42b242;
+        border-radius: 19px;
+        padding: 5px 88px;
+        margin-left: 8%;
+    }
+
+    .add-money-btn:hover {
+        background: white;
+        color: #42b242;
+        border: 1px solid green;
+        border-radius: 19px;
+        padding: 5px 88px;
+        margin-left: 8%;
+    }
+
+
+    /* ---------- Wallet Information Div --------------*/
+
+    .wallet-info-div {
+        width: 100%;
+        background-color: #CDD;
+        border-left: 0px solid whitesmoke;
+        border-radius: 15px;
+        margin-top: 5%;
+        /* margin-bottom: 20%; */
+        /* border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px; */
+    }
+
+    .wallet-info-div .wallet-info-images {
+        display: flex;
+        list-style: none;
+        padding: 10px 5px;
+    }
+
+    .wallet-info-images li {
+        background: white;
+        margin: 10px;
+    }
+
+    .wallet-info-images img {
+        width: 100%;
+        padding-bottom: 3px;
+        border-bottom: 1px solid whitesmoke;
+    }
 }

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './UserProfile.css';
 import userImg from '../../../Images/user.jpg';
 import { Spinner } from 'react-bootstrap';
+import Footer from '../../../Shared/Footer/Footer';
 
 const UserProfile = () => {
     const [products, setProducts] = useState([]);
@@ -23,7 +24,9 @@ const UserProfile = () => {
         fetch("https://fakestoreapi.com/products")
             .then(req => req.json())
             .then(data => {
-                setProducts(data)
+                const reverseData = data.reverse()
+                // const dataLimit = reverseData.slice(0, 3)
+                setProducts(reverseData.slice(0, 3))
                 setLoading(false)
                 setLoading2(false)
             })
@@ -61,7 +64,7 @@ const UserProfile = () => {
                 </div>
                 <div className='information-section'>
                     <h5>Basic Information <i className="bi bi-arrow-down-circle"></i></h5>
-                    <hr style={{ margin: '5px 0' }} />
+                    <hr style={{ margin: '10px 0' }} />
                     <ul>
                         <p>Hello</p>
                         <p>Hello</p>
@@ -71,7 +74,7 @@ const UserProfile = () => {
                         <p>Hello</p>
                     </ul>
                     <h5>Recent Activities <i className="bi bi-arrow-down-circle"></i></h5>
-                    <hr style={{ margin: '5px 0' }} />
+                    <hr style={{ margin: '10px 0' }} />
                     {loading ?
                         <div style={{ textAlign: "center", paddingTop: "12%" }}>
                             <Spinner animation="border" variant="info" />
@@ -81,7 +84,7 @@ const UserProfile = () => {
                             {
                                 products.map(product =>
                                     <div key={product.id} className='ra-item mb-2 py-2 px-3'>
-                                        <img style={{ width: '70px', height: "70px" }} src={product.image} alt="" />
+                                        <img src={product.image} alt="" />
                                         <h6>{product.title.slice(0, 50)}</h6>
                                         <p>{product.price}</p>
                                     </div>
@@ -90,7 +93,7 @@ const UserProfile = () => {
                         </div>}
                 </div>
             </div>
-            {/* <Footer /> */}
+            <Footer />
         </div>
     );
 };

@@ -7,7 +7,7 @@
 .profile-main {
     display: flex;
     width: 100%;
-    position: fixed;
+    /* position: fixed; */
     padding: 5% 5% 8%;
 }
 
@@ -110,12 +110,12 @@
 }
 
 .ra-div {
-    height: 50vh;
+    height: auto;
     overflow-y: scroll;
 }
 
 .ra-div::-webkit-scrollbar {
-    width: 6px;
+    width: 0px;
 }
 
 .ra-div::-webkit-scrollbar-track {
@@ -135,4 +135,177 @@
     align-items: center;
     background: white;
     border-radius: 6px;
+}
+
+.ra-item img {
+    width: 70px;
+    height: 70px;
+}
+
+
+
+
+
+/*---------------------------------------------------------
+                Responsive Media Query 
+---------------------------------------------------------*/
+
+
+
+
+@media only screen and (max-width: 480px) {
+    .master-div {
+        width: 100%;
+        /* position: fixed; */
+        /* padding: 5% 5% 8%;  */
+    }
+
+    .profile-main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        /* position: fixed; */
+        padding: 5% 5% 8%;
+    }
+
+    /* ---------- User Section ------------ */
+
+    .user-section {
+        width: 100%;
+        height: auto;
+        /* background-color: #DCE3E8; */
+        background: #CDD;
+        border-radius: 15px;
+        /* border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px; */
+        margin-top: 15%;
+    }
+
+    .profile-img {
+        width: 50%;
+        margin: 15px 15px 8px 15px;
+        /* border: 5px solid #63e067; */
+        border: 5px solid #42b242;
+        border-radius: 50%;
+    }
+
+    .user-section ul {
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+        border-top: 4px solid whitesmoke;
+    }
+
+    .user-section ul div {
+        display: flex;
+        background-color: white;
+        margin: 15px;
+        padding: 10px 0;
+        border-top-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+    }
+
+    .user-section ul li {
+        margin: 5px 0;
+        list-style: none;
+        text-align: start;
+    }
+
+    .user-section span {
+        padding: 2px;
+        margin: 0 5px;
+    }
+
+    .user-section small {
+        background: #42b242;
+        color: white;
+        padding: 6px 10px;
+        margin-right: 10px;
+        border-radius: 19px;
+    }
+
+    .balance-btn {
+        border: 1px solid #63e067;
+        background: #63e067;
+        color: white;
+        padding: 4px 20px;
+        border-radius: 18px;
+    }
+
+    .balance-btn:hover {
+        border: 1px solid #63e067;
+        background: white;
+        color: #63e067;
+        padding: 4px 20px;
+        border-radius: 18px;
+    }
+
+
+    /* ---------- Information Section ------------ */
+
+
+    .information-section {
+        width: 100%;
+        /* background-color: #DCE3E8; */
+        background: #CDD;
+        text-align: start;
+        padding: 15px;
+        border-left: 0px solid whitesmoke;
+        border-radius: 15px;
+        margin-top: 5%;
+        /* border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px; */
+    }
+
+    .information-section ul {
+        background: white;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 5px;
+        margin: 0 0 10px;
+    }
+
+    .information-section h5 {
+        font-weight: bold;
+        color: black;
+    }
+
+    .ra-div {
+        height: auto;
+        overflow-y: scroll;
+    }
+
+    .ra-div::-webkit-scrollbar {
+        width: 0px;
+    }
+
+    .ra-div::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background: ghostwhite;
+    }
+
+    .ra-div::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        /* background: linear-gradient(135deg, #8BC6EC 0%, #9ea2e9 100%); */
+        background: linear-gradient(135deg, #63e067 30%, #42b242 70%);
+    }
+
+    .ra-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: white;
+        border-radius: 6px;
+    }
+
+    .ra-item img {
+        width: 70px;
+        height: 70px;
+        margin-right: 20px;
+    }
+
+    .ra-item h6 {
+        font-size: 15px;
+        margin-right: 20px
+    }
 }
