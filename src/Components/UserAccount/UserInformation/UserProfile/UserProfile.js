@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './UserProfile.css';
 import userImg from '../../../Images/user.jpg';
+import userImg2 from '../../../Images/01778799787.jpg';
 import { Spinner } from 'react-bootstrap';
 import Footer from '../../../Shared/Footer/Footer';
 
@@ -36,7 +37,7 @@ const UserProfile = () => {
         <div className='master-div'>
             <div className='profile-main'>
                 <div className='user-section'>
-                    <img className='profile-img' src={userImg} alt="" />
+                    <img className='profile-img' src={userImg2} alt="" />
                     <br />
                     <div className='d-flex justify-content-center'>
                         <small><i className="bi bi-person-check"></i> User : ST-001</small>

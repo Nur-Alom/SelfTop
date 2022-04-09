@@ -23,11 +23,13 @@
 }
 
 .profile-img {
-    width: 50%;
+    width: 150px;
+    height: 150px;
     margin: 15px 15px 8px 15px;
     /* border: 5px solid #63e067; */
     border: 5px solid #42b242;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 .user-section ul {
@@ -182,11 +184,13 @@
     }
 
     .profile-img {
-        width: 50%;
+        width: 150px;
+        height: 150px;
         margin: 15px 15px 8px 15px;
         /* border: 5px solid #63e067; */
         border: 5px solid #42b242;
         border-radius: 50%;
+        object-fit: cover;
     }
 
     .user-section ul {
